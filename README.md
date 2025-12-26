@@ -1,1 +1,0 @@
-# Hackaton-Physical-A.I-Textbook
