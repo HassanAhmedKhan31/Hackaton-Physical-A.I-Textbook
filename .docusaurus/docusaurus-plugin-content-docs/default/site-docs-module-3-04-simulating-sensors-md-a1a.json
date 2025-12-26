@@ -1,0 +1,27 @@
+{
+  "id": "module-3/simulating-sensors",
+  "title": "Virtual Eyes & Ears (Sensors)",
+  "description": "A simulation is only useful if the robot can perceive it. If we want to test our navigation algorithms, our simulated robot needs a simulated Lidar.",
+  "source": "@site/docs/module-3/04-simulating-sensors.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/simulating-sensors",
+  "permalink": "/module-3/simulating-sensors",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Virtual Eyes & Ears (Sensors)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Building the World",
+    "permalink": "/module-3/physics-and-worlds"
+  },
+  "next": {
+    "title": "The Pretty Face (Unity Visualization)",
+    "permalink": "/module-3/unity-visualization"
+  }
+}

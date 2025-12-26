@@ -1,0 +1,24 @@
+{
+  "id": "module-5/capstone-integration",
+  "title": "Assembling the Avatar (The Capstone)",
+  "description": "In this final section of Module 5, we look at how to integrate every technology we have learned so far into a single, cohesive \"Robot Brain.\" This is the goal of the Physical AI course: creating an autonomous humanoid avatar.",
+  "source": "@site/docs/module-5/05-capstone-integration.md",
+  "sourceDirName": "module-5",
+  "slug": "/module-5/capstone-integration",
+  "permalink": "/module-5/capstone-integration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Social Robotics (HRI)",
+    "permalink": "/module-5/human-robot-interaction"
+  },
+  "next": {
+    "title": "The Voice Interface (VUI)",
+    "permalink": "/module-6/intro-conversational-robotics"
+  }
+}

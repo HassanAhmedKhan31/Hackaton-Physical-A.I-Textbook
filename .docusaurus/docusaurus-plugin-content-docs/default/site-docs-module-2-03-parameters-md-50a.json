@@ -1,0 +1,27 @@
+{
+  "id": "module-2/parameters",
+  "title": "Runtime Configuration (Parameters)",
+  "description": "Hard-coding values is a bad habit in software engineering. If you hard-code your robot's walking speed to 1.0 m/s, you have to stop the robot, edit the code, rebuild, and restart just to test 0.5 m/s.",
+  "source": "@site/docs/module-2/03-parameters.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/parameters",
+  "permalink": "/module-2/parameters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Runtime Configuration (Parameters)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Launch Systems (Waking Up the Robot)",
+    "permalink": "/module-2/launch-files"
+  },
+  "next": {
+    "title": "Long-Running Tasks (Actions)",
+    "permalink": "/module-2/actions"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "module-3/unity-visualization",
+  "title": "The Pretty Face (Unity Visualization)",
+  "description": "Gazebo is a scientific tool. Its graphics are \"good enough\" for debugging, but they aren't beautiful.",
+  "source": "@site/docs/module-3/05-unity-visualization.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/unity-visualization",
+  "permalink": "/module-3/unity-visualization",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "The Pretty Face (Unity Visualization)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Virtual Eyes & Ears (Sensors)",
+    "permalink": "/module-3/simulating-sensors"
+  },
+  "next": {
+    "title": "The Omniverse (Isaac Sim)",
+    "permalink": "/module-4/isaac-sim-omniverse"
+  }
+}

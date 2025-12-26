@@ -1,0 +1,20 @@
+{
+  "id": "module-6/future-ethics",
+  "title": "Living with Robots (Ethics & Future)",
+  "description": "As we conclude this course, we must address the reality of releasing autonomous agents into the real world. A robot is not just a machine; it is a physical entity that shares space with humans.",
+  "source": "@site/docs/module-6/05-future-ethics.md",
+  "sourceDirName": "module-6",
+  "slug": "/module-6/future-ethics",
+  "permalink": "/module-6/future-ethics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vision-Language-Action (VLA)",
+    "permalink": "/module-6/multimodal-interaction"
+  }
+}

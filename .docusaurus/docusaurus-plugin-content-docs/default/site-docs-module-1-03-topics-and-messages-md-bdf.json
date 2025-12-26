@@ -1,0 +1,27 @@
+{
+  "id": "module-1/topics-and-messages",
+  "title": "Signals & Synapses (Topics)",
+  "description": "If Nodes are neurons, Topics are the synapses—the gaps where signals jump from one neuron to another.",
+  "source": "@site/docs/module-1/03-topics-and-messages.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/topics-and-messages",
+  "permalink": "/module-1/topics-and-messages",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Signals & Synapses (Topics)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Neurons & Nodes",
+    "permalink": "/module-1/nodes-and-rclpy"
+  },
+  "next": {
+    "title": "Reflexes & Requests (Services)",
+    "permalink": "/module-1/services-actions"
+  }
+}

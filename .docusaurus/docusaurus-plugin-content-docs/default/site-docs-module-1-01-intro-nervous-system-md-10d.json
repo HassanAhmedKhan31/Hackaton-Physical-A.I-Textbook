@@ -1,0 +1,23 @@
+{
+  "id": "module-1/intro-nervous-system",
+  "title": "The Nervous System of the Robot",
+  "description": "<PersonalizedContent",
+  "source": "@site/docs/module-1/01-intro-nervous-system.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/intro-nervous-system",
+  "permalink": "/module-1/intro-nervous-system",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "The Nervous System of the Robot"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Neurons & Nodes",
+    "permalink": "/module-1/nodes-and-rclpy"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "module-1/services-actions",
+  "title": "Reflexes & Requests (Services)",
+  "description": "Topics are great for continuous data (sensor streams, heartbeats), like listening to a radio. But sometimes you need to ask a specific question and get a specific answer.",
+  "source": "@site/docs/module-1/04-services-actions.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/services-actions",
+  "permalink": "/module-1/services-actions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Reflexes & Requests (Services)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signals & Synapses (Topics)",
+    "permalink": "/module-1/topics-and-messages"
+  },
+  "next": {
+    "title": "The Body Schema (URDF)",
+    "permalink": "/module-1/urdf-humanoid-body"
+  }
+}

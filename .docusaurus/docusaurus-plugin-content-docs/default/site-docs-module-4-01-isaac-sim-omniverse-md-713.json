@@ -1,0 +1,24 @@
+{
+  "id": "module-4/isaac-sim-omniverse",
+  "title": "The Omniverse (Isaac Sim)",
+  "description": "Welcome to the cutting edge of robotics simulation. In previous modules, we used Gazebo, which relies primarily on your CPU for physics calculations. Now, we are stepping into NVIDIA Isaac Sim, a photo-realistic, physically accurate virtual environment powered by NVIDIA Omniverse.",
+  "source": "@site/docs/module-4/01-isaac-sim-omniverse.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/isaac-sim-omniverse",
+  "permalink": "/module-4/isaac-sim-omniverse",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Pretty Face (Unity Visualization)",
+    "permalink": "/module-3/unity-visualization"
+  },
+  "next": {
+    "title": "Supercharging ROS (Isaac ROS GEMs)",
+    "permalink": "/module-4/isaac-ros-gems"
+  }
+}

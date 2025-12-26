@@ -1,0 +1,27 @@
+{
+  "id": "module-1/nodes-and-rclpy",
+  "title": "Neurons & Nodes",
+  "description": "In the biological analogy, a Node is a neuron or a cluster of neurons dedicated to a single task. In ROS 2 terms, a Node is a single executable process—a Python script—that performs computation.",
+  "source": "@site/docs/module-1/02-nodes-and-rclpy.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/nodes-and-rclpy",
+  "permalink": "/module-1/nodes-and-rclpy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Neurons & Nodes"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Nervous System of the Robot",
+    "permalink": "/module-1/intro-nervous-system"
+  },
+  "next": {
+    "title": "Signals & Synapses (Topics)",
+    "permalink": "/module-1/topics-and-messages"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module-4/isaac-ros-gems",
+  "title": "Supercharging ROS (Isaac ROS GEMs)",
+  "description": "Standard ROS 2 nodes often struggle with high-bandwidth data like 4K video streams or point clouds because they process data on the CPU. Isaac ROS GEMs are a collection of GPU-accelerated packages that replace these slow standard nodes.",
+  "source": "@site/docs/module-4/02-isaac-ros-gems.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/isaac-ros-gems",
+  "permalink": "/module-4/isaac-ros-gems",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Omniverse (Isaac Sim)",
+    "permalink": "/module-4/isaac-sim-omniverse"
+  },
+  "next": {
+    "title": "Spatial Awareness (VSLAM & Nav2)",
+    "permalink": "/module-4/nav2-and-vslam"
+  }
+}

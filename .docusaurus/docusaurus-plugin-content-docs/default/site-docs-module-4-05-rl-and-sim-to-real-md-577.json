@@ -1,0 +1,24 @@
+{
+  "id": "module-4/rl-and-sim-to-real",
+  "title": "Walking with AI (Reinforcement Learning)",
+  "description": "Classical robotics uses explicit mathematical equations (Inverse Kinematics) to calculate how a robot should move. However, for complex tasks like humanoid walking, the math becomes incredibly difficult.",
+  "source": "@site/docs/module-4/05-rl-and-sim-to-real.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/rl-and-sim-to-real",
+  "permalink": "/module-4/rl-and-sim-to-real",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Training the Brain (Synthetic Data)",
+    "permalink": "/module-4/synthetic-data-generation"
+  },
+  "next": {
+    "title": "The Math of Movement (Kinematics)",
+    "permalink": "/module-5/kinematics-dynamics"
+  }
+}

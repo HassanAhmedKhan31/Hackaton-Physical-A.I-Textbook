@@ -1,0 +1,178 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "module-1/intro-nervous-system",
+          "docs": [
+            {
+              "id": "module-1/intro-nervous-system",
+              "path": "/module-1/intro-nervous-system",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/nodes-and-rclpy",
+              "path": "/module-1/nodes-and-rclpy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/services-actions",
+              "path": "/module-1/services-actions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/topics-and-messages",
+              "path": "/module-1/topics-and-messages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/urdf-humanoid-body",
+              "path": "/module-1/urdf-humanoid-body",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/actions",
+              "path": "/module-2/actions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/custom-interfaces",
+              "path": "/module-2/custom-interfaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/launch-files",
+              "path": "/module-2/launch-files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/parameters",
+              "path": "/module-2/parameters",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/workspaces-and-packages",
+              "path": "/module-2/workspaces-and-packages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/gazebo-environment",
+              "path": "/module-3/gazebo-environment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/physics-and-worlds",
+              "path": "/module-3/physics-and-worlds",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/simulating-sensors",
+              "path": "/module-3/simulating-sensors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/unity-visualization",
+              "path": "/module-3/unity-visualization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/urdf-vs-sdf",
+              "path": "/module-3/urdf-vs-sdf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/isaac-ros-gems",
+              "path": "/module-4/isaac-ros-gems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/isaac-sim-omniverse",
+              "path": "/module-4/isaac-sim-omniverse",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/nav2-and-vslam",
+              "path": "/module-4/nav2-and-vslam",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/rl-and-sim-to-real",
+              "path": "/module-4/rl-and-sim-to-real",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/synthetic-data-generation",
+              "path": "/module-4/synthetic-data-generation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/bipedal-locomotion",
+              "path": "/module-5/bipedal-locomotion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/capstone-integration",
+              "path": "/module-5/capstone-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/human-robot-interaction",
+              "path": "/module-5/human-robot-interaction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/kinematics-dynamics",
+              "path": "/module-5/kinematics-dynamics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/manipulation-grasping",
+              "path": "/module-5/manipulation-grasping",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/future-ethics",
+              "path": "/module-6/future-ethics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/hearing-with-whisper",
+              "path": "/module-6/hearing-with-whisper",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/intro-conversational-robotics",
+              "path": "/module-6/intro-conversational-robotics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/multimodal-interaction",
+              "path": "/module-6/multimodal-interaction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/thinking-with-llms",
+              "path": "/module-6/thinking-with-llms",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/module-1/intro-nervous-system",
+                "label": "module-1/intro-nervous-system"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

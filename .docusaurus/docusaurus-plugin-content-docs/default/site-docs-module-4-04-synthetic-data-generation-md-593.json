@@ -1,0 +1,24 @@
+{
+  "id": "module-4/synthetic-data-generation",
+  "title": "Training the Brain (Synthetic Data)",
+  "description": "Training modern AI models (like Object Detection or Segmentation) requires massive datasets—often tens of thousands of labeled images. Collecting this data in the real world is slow, expensive, and sometimes dangerous.",
+  "source": "@site/docs/module-4/04-synthetic-data-generation.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/synthetic-data-generation",
+  "permalink": "/module-4/synthetic-data-generation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Spatial Awareness (VSLAM & Nav2)",
+    "permalink": "/module-4/nav2-and-vslam"
+  },
+  "next": {
+    "title": "Walking with AI (Reinforcement Learning)",
+    "permalink": "/module-4/rl-and-sim-to-real"
+  }
+}

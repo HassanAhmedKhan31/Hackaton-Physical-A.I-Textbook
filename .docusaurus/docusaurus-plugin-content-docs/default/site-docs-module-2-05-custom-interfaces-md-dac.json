@@ -1,0 +1,27 @@
+{
+  "id": "module-2/custom-interfaces",
+  "title": "Defining the Protocol (Messages)",
+  "description": "In any language, you need words to communicate. If you want to talk about \"Philosophy,\" you need complex words. If you want to talk about \"Rocket Science,\" you need specific technical terms.",
+  "source": "@site/docs/module-2/05-custom-interfaces.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/custom-interfaces",
+  "permalink": "/module-2/custom-interfaces",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Defining the Protocol (Messages)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Long-Running Tasks (Actions)",
+    "permalink": "/module-2/actions"
+  },
+  "next": {
+    "title": "The Simulation Lab (Setting up Gazebo)",
+    "permalink": "/module-3/gazebo-environment"
+  }
+}

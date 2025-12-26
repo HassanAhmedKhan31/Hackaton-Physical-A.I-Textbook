@@ -1,0 +1,27 @@
+{
+  "id": "module-2/actions",
+  "title": "Long-Running Tasks (Actions)",
+  "description": "In Module 1, we learned about Services (Request -> Response). Services are like a function call: you ask for something, and you wait until you get the answer. This works great for \"Turn on LED\" or \"Get Battery Level.\"",
+  "source": "@site/docs/module-2/04-actions.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/actions",
+  "permalink": "/module-2/actions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Long-Running Tasks (Actions)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Runtime Configuration (Parameters)",
+    "permalink": "/module-2/parameters"
+  },
+  "next": {
+    "title": "Defining the Protocol (Messages)",
+    "permalink": "/module-2/custom-interfaces"
+  }
+}

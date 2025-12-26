@@ -1,0 +1,27 @@
+{
+  "id": "module-3/urdf-vs-sdf",
+  "title": "The Format War (URDF vs. SDF)",
+  "description": "As a roboticist, you are caught in a format war between two giants: ROS and Gazebo.",
+  "source": "@site/docs/module-3/02-urdf-vs-sdf.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/urdf-vs-sdf",
+  "permalink": "/module-3/urdf-vs-sdf",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "The Format War (URDF vs. SDF)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Simulation Lab (Setting up Gazebo)",
+    "permalink": "/module-3/gazebo-environment"
+  },
+  "next": {
+    "title": "Building the World",
+    "permalink": "/module-3/physics-and-worlds"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "module-3/physics-and-worlds",
+  "title": "Building the World",
+  "description": "Before we spawn our robot, we need a world for it to live in. In Gazebo, the world is defined using an SDF file.",
+  "source": "@site/docs/module-3/03-physics-and-worlds.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/physics-and-worlds",
+  "permalink": "/module-3/physics-and-worlds",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Building the World"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Format War (URDF vs. SDF)",
+    "permalink": "/module-3/urdf-vs-sdf"
+  },
+  "next": {
+    "title": "Virtual Eyes & Ears (Sensors)",
+    "permalink": "/module-3/simulating-sensors"
+  }
+}

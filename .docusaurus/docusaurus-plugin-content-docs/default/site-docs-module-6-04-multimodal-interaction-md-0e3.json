@@ -1,0 +1,24 @@
+{
+  "id": "module-6/multimodal-interaction",
+  "title": "Vision-Language-Action (VLA)",
+  "description": "A voice assistant like Alexa is blind. It can hear \"Turn on the lights,\" but it cannot understand \"Pick up that red cup.\" For physical interaction, we need Multimodal AI—combining Vision and Language.",
+  "source": "@site/docs/module-6/04-multimodal-interaction.md",
+  "sourceDirName": "module-6",
+  "slug": "/module-6/multimodal-interaction",
+  "permalink": "/module-6/multimodal-interaction",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Cognitive Core (GPT Integration)",
+    "permalink": "/module-6/thinking-with-llms"
+  },
+  "next": {
+    "title": "Living with Robots (Ethics & Future)",
+    "permalink": "/module-6/future-ethics"
+  }
+}

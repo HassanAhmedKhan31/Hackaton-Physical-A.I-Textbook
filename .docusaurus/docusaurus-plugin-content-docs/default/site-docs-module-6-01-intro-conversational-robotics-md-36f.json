@@ -1,0 +1,24 @@
+{
+  "id": "module-6/intro-conversational-robotics",
+  "title": "The Voice Interface (VUI)",
+  "description": "For decades, we have controlled robots with keyboards, gamepads, and touchscreens. But if humanoids are to integrate seamlessly into our homes, they must speak our language. This is the Voice User Interface (VUI).",
+  "source": "@site/docs/module-6/01-intro-conversational-robotics.md",
+  "sourceDirName": "module-6",
+  "slug": "/module-6/intro-conversational-robotics",
+  "permalink": "/module-6/intro-conversational-robotics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Assembling the Avatar (The Capstone)",
+    "permalink": "/module-5/capstone-integration"
+  },
+  "next": {
+    "title": "The Robot's Ears (Speech Recognition)",
+    "permalink": "/module-6/hearing-with-whisper"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module-5/kinematics-dynamics",
+  "title": "The Math of Movement (Kinematics)",
+  "description": "To make a humanoid robot move, we need to understand how its joints relate to the position of its body in 3D space. This study of motion without considering forces is called Kinematics.",
+  "source": "@site/docs/module-5/01-kinematics-dynamics.md",
+  "sourceDirName": "module-5",
+  "slug": "/module-5/kinematics-dynamics",
+  "permalink": "/module-5/kinematics-dynamics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Walking with AI (Reinforcement Learning)",
+    "permalink": "/module-4/rl-and-sim-to-real"
+  },
+  "next": {
+    "title": "The Art of Falling (Bipedal Walking)",
+    "permalink": "/module-5/bipedal-locomotion"
+  }
+}
