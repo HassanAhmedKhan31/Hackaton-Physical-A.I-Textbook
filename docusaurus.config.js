@@ -4,7 +4,6 @@ module.exports = {
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'physical-ai', // Usually your GitHub org/user name.
   projectName: 'physical-ai-textbook', // Usually your repo name.
@@ -39,6 +38,11 @@ module.exports = {
 },
         ],
       },
+      markdown: {
+  hooks: {
+    onBrokenMarkdownLinks: 'warn',   // ← put it here
+  },
+},
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} Physical AI Textbook. Built with Docusaurus.`,

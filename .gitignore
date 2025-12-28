@@ -1,1 +1,23 @@
-node_modules
+# Ignore Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Ignore Build & Cache Folders
+.docusaurus/
+build/
+dist/
+
+# Ignore Environment Variables (Security!)
+.env
+auth-server/.env
+chatbot/.env
+
+# Ignore Database & Logs
+chatbot/local_qdrant_index/
+*.log
+npm-debug.log*
+
+# Ignore System Files
+.DS_Store
+Thumbs.db

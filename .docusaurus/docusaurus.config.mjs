@@ -9,7 +9,6 @@ export default {
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
-  "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "physical-ai",
   "projectName": "physical-ai-textbook",
@@ -18,11 +17,11 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\Users\\Hassan Ahmed Khan\\Desktop\\my-ai-book\\sidebars.js",
+          "sidebarPath": "C:\\my-ai-book\\sidebars.js",
           "routeBasePath": "/"
         },
         "theme": {
-          "customCss": "C:\\Users\\Hassan Ahmed Khan\\Desktop\\my-ai-book\\src\\components\\ChatWidget.css"
+          "customCss": "C:\\my-ai-book\\src\\components\\ChatWidget.css"
         }
       }
     ]
@@ -40,6 +39,11 @@ export default {
       ],
       "hideOnScroll": false
     },
+    "markdown": {
+      "hooks": {
+        "onBrokenMarkdownLinks": "warn"
+      }
+    },
     "footer": {
       "style": "dark",
       "copyright": "Copyright © 2025 Physical AI Textbook. Built with Docusaurus.",
@@ -55,6 +59,11 @@ export default {
       "sidebar": {
         "hideable": false,
         "autoCollapseCategories": false
+      }
+    },
+    "blog": {
+      "sidebar": {
+        "groupByYear": true
       }
     },
     "metadata": [],
@@ -214,6 +223,28 @@ export default {
     ],
     "localeConfigs": {}
   },
+  "future": {
+    "v4": {
+      "removeLegacyPostBuildHeadAttribute": false,
+      "useCssCascadeLayers": false
+    },
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false,
+      "rspackPersistentCache": false,
+      "ssgWorkerThreads": false
+    },
+    "experimental_storage": {
+      "type": "localStorage",
+      "namespace": false
+    },
+    "experimental_router": "browser"
+  },
+  "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"
@@ -230,10 +261,18 @@ export default {
   "markdown": {
     "format": "mdx",
     "mermaid": false,
+    "emoji": true,
     "mdx1Compat": {
       "comments": true,
       "admonitions": true,
       "headingIds": true
+    },
+    "anchors": {
+      "maintainCase": false
+    },
+    "hooks": {
+      "onBrokenMarkdownLinks": "warn",
+      "onBrokenMarkdownImages": "throw"
     }
   }
 };

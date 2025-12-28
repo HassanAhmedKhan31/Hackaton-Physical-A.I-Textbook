@@ -13,9 +13,10 @@ load_dotenv()
 app = FastAPI()
 
 # Add CORS Middleware (Crucial for your React Frontend to talk to this)
+# In app.py
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],  # ✅ Change this to "*" to allow any connection
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
