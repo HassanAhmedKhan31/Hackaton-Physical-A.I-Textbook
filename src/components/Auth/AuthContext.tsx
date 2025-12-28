@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { authClient } from './authClient';
+import { authClient } from './AuthClient';
 
 type User = {
     id: string;
