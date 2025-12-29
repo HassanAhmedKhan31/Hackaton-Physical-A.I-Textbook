@@ -57,10 +57,10 @@ npm install
 npm run dev
 cd chatbot
 
-### Create Virtual Environment (Optional but recommended)
+*** Create Virtual Environment (Optional but recommended)
 python -m venv venv
 
-### Activate Venv (Windows: venv\Scripts\activate | Mac/Linux: source venv/bin/activate)
+###Activate Venv (Windows: venv\Scripts\activate | Mac/Linux: source venv/bin/activate)
 
 pip install -r requirements.txt
 uvicorn app:app --reload --port 8000
@@ -79,7 +79,7 @@ Important: You must have 3 Terminal Windows open, running the commands above sim
 
 Open the App: Go to http://localhost:3000.
 
-### Test Personalization:
+### 2.Test Personalization:
 Read Module 1 (Notice the software analogies).
 
 Logout and sign up as a "Hardware Engineer".
@@ -112,6 +112,7 @@ my-ai-book/
 
 
 🤝 Tech Stack Details
+
 Frontend Framework: Docusaurus (React, TypeScript)
 
 Authentication: Better-Auth, Express.js
@@ -123,6 +124,7 @@ AI/LLM: OpenAI GPT-4o, LangChain
 Styling: CSS Modules, Infima
 
 🏆 Hackathon Submission
+
 Event: Physical AI & Humanoid Robotics Hackathon
 
 Created by: Hassan Ahmed Khan
