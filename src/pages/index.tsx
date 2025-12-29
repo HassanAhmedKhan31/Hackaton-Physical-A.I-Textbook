@@ -3,56 +3,61 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
+import { useColorMode } from '@docusaurus/theme-common';
+
 import styles from './index.module.css';
-// ✅ Correct Import: We import the component, not the client logic
-import UserMenu from '@site/src/components/Auth/UserMenu'; 
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+  const { colorMode, setColorMode } = useColorMode();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        
-        {/* Main Title */}
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        
+        <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-
-        {/* Start Learning Button */}
-        <div className={styles.buttons} style={{ marginTop: '30px' }}>
-         <Link
+        
+        <div className={styles.buttons} style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          
+          {/* Your requested link */}
+          <Link
             className="button button--secondary button--lg"
-            to="/module-1/intro-nervous-system">
+            to="/module-1/intro-nervous-system"> 
             Start Learning Physical AI 🤖
           </Link>
-        </div>
 
+          <button
+            className="button button--outline button--secondary button--lg"
+            onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
+            style={{ minWidth: '160px' }}
+          >
+            {colorMode === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
+          </button>
+
+        </div>
       </div>
     </header>
   );
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A Hands-on Course in Humanoid Robotics">
+      
       <HomepageHeader />
+      
       <main>
-        <div className="container padding-vert--xl">
-          <div className="text--center">
-            <h2>Welcome to the Future of Robotics</h2>
-            <p>
-              This textbook covers ROS 2, Gazebo Simulation, NVIDIA Isaac, 
-              and Humanoid Control using Generative AI.
-            </p>
-          </div>
+        <div style={{ padding: '4rem', textAlign: 'center', fontSize: '1.2rem' }}>
+          <h3>Welcome to the Future of Robotics</h3>
+          <p>
+            This textbook covers ROS 2, Gazebo Simulation, NVIDIA Isaac, and Humanoid Control using Generative AI.
+          </p>
         </div>
       </main>
+
     </Layout>
   );
 }

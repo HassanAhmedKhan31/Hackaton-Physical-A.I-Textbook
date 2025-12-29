@@ -1,139 +1,132 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './ChatWidget.css';
 
-const ChatWidget = () => {
+export default function ChatWidget() {
+  // 1. State to track if the window is open or closed
   const [isOpen, setIsOpen] = useState(false);
+  
+  // 2. State for messages and input
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hello! I am your AI Professor. Ask me anything about the book.", sender: 'bot' }
+    { role: 'system', text: 'Hello! I am your AI Professor. Ask me anything about the textbook.' }
   ]);
-  const [input, setInput] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedText, setSelectedText] = useState("");
   const messagesEndRef = useRef(null);
 
-  const scrollToBottom = () => {
+  // Auto-scroll to bottom of chat
+  useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  }, [messages, isOpen]);
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
-  // Monitor text selection
-  useEffect(() => {
-    const handleSelection = () => {
-      const text = window.getSelection().toString();
-      if (text && text.length > 0) {
-        setSelectedText(text);
-      }
-    };
-
-    document.addEventListener('mouseup', handleSelection);
-    return () => document.removeEventListener('mouseup', handleSelection);
-  }, []);
-
+  // 3. Function to send message to Python Backend
   const handleSend = async () => {
-    if (!input.trim()) return;
+    if (!inputValue.trim()) return;
 
-    const userMessage = { id: Date.now(), text: input, sender: 'user' };
-    setMessages(prev => [...prev, userMessage]);
-    setInput("");
+    const userMessage = inputValue;
+    setMessages(prev => [...prev, { role: 'user', text: userMessage }]);
+    setInputValue('');
     setIsLoading(true);
 
-    // Capture context at the moment of sending
-    const currentSelection = selectedText;
-    // Clear selection state after sending
-    setSelectedText("");
-
     try {
+      // Talking to your Python Brain (Port 8000)
       const response = await fetch('http://localhost:8000/chat', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message: userMessage.text,
-          selected_text: currentSelection || null
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: userMessage }),
       });
 
       const data = await response.json();
-      
-      const botMessage = { 
-        id: Date.now() + 1, 
-        text: data.response || "Sorry, I encountered an error.", 
-        sender: 'bot' 
-      };
-      
-      setMessages(prev => [...prev, botMessage]);
+      setMessages(prev => [...prev, { role: 'bot', text: data.reply }]);
     } catch (error) {
-      console.error("Chat Error:", error);
-      setMessages(prev => [...prev, { 
-        id: Date.now() + 1, 
-        text: "Error: Could not connect to the Professor.", 
-        sender: 'bot' 
-      }]);
+      setMessages(prev => [...prev, { role: 'bot', text: "❌ Error: Could not connect to the Brain. Is 'app.py' running?" }]);
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <div className="chat-widget-container">
+    <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 9999 }}>
+      
+      {/* --- THE CHAT WINDOW --- */}
       {isOpen && (
-        <div className="chat-window">
-          <div className="chat-header">
-            <span>AI Professor 🤖</span>
-            <button 
-              onClick={() => setIsOpen(false)} 
-              style={{background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontSize: '16px'}}
-            >
-              ✕
-            </button>
+        <div style={{
+          width: '350px',
+          height: '500px',
+          backgroundColor: 'white',
+          borderRadius: '12px',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
+          display: 'flex',
+          flexDirection: 'column',
+          marginBottom: '15px',
+          overflow: 'hidden',
+          border: '1px solid #ddd'
+        }}>
+          {/* Header */}
+          <div style={{ backgroundColor: '#25c2a0', padding: '15px', color: 'white', fontWeight: 'bold', display: 'flex', justifyContent: 'space-between' }}>
+            <span>🤖 AI Professor</span>
+            <button onClick={() => setIsOpen(false)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontSize: '1.2rem' }}>✖</button>
           </div>
-          
-          <div className="chat-messages">
-            {messages.map((msg) => (
-              <div key={msg.id} className={`message ${msg.sender}`}>
-                {msg.text}
+
+          {/* Messages Area */}
+          <div style={{ flex: 1, padding: '15px', overflowY: 'auto', backgroundColor: '#f9f9f9', color: 'black' }}>
+            {messages.map((msg, idx) => (
+              <div key={idx} style={{
+                marginBottom: '10px',
+                textAlign: msg.role === 'user' ? 'right' : 'left'
+              }}>
+                <span style={{
+                  display: 'inline-block',
+                  padding: '10px',
+                  borderRadius: '10px',
+                  backgroundColor: msg.role === 'user' ? '#007bff' : '#e0e0e0',
+                  color: msg.role === 'user' ? 'white' : 'black',
+                  maxWidth: '80%'
+                }}>
+                  {msg.text}
+                </span>
               </div>
             ))}
-            {isLoading && <div className="message bot">Thinking...</div>}
+            {isLoading && <div style={{ color: '#888', fontStyle: 'italic' }}>Thinking...</div>}
             <div ref={messagesEndRef} />
           </div>
 
-          {selectedText && (
-            <div className="selection-indicator">
-              Selected context: "{selectedText.substring(0, 30)}..."
-            </div>
-          )}
-
-          <div className="chat-input-area">
-            <input
-              type="text"
-              className="chat-input"
-              placeholder="Ask a question..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
+          {/* Input Area */}
+          <div style={{ padding: '10px', borderTop: '1px solid #ddd', display: 'flex', gap: '5px' }}>
+            <input 
+              type="text" 
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-              disabled={isLoading}
+              placeholder="Ask a question..."
+              style={{ flex: 1, padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: 'black' }}
             />
             <button 
-              className="chat-send-btn" 
               onClick={handleSend}
-              disabled={isLoading}
-            >
-              ➤
+              style={{ padding: '10px 15px', backgroundColor: '#25c2a0', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+              Send
             </button>
           </div>
         </div>
       )}
 
-      <button className="chat-widget-button" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? '💬' : '🤖'}
+      {/* --- THE ROBOT BUTTON --- */}
+      <button 
+        onClick={() => setIsOpen(!isOpen)} // ✅ This toggles the window
+        style={{
+          width: '60px',
+          height: '60px',
+          borderRadius: '50%',
+          backgroundColor: '#25c2a0',
+          border: 'none',
+          boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
+          cursor: 'pointer',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontSize: '2rem'
+        }}
+      >
+        {isOpen ? '❌' : '🤖'}
       </button>
     </div>
   );
-};
-
-export default ChatWidget;
+}

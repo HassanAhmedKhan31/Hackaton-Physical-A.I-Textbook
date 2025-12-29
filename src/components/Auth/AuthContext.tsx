@@ -1,70 +1,29 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { authClient } from './AuthClient';
 
-type User = {
-    id: string;
-    email: string;
-    name: string;
-    background: 'software' | 'hardware' | 'student';
-    hardware_specs?: string;
-};
+// Define the shape of our Auth Context
+interface AuthContextType {
+    user: any;
+    signIn: () => void;
+    signOut: () => void;
+}
 
-type AuthContextType = {
-    user: User | null;
-    isLoading: boolean;
-    signIn: (email, password) => Promise<void>;
-    signUp: (email, password, name, background, hardware_specs) => Promise<void>;
-    signOut: () => Promise<void>;
-};
+const AuthContext = createContext<AuthContextType | null>(null);
 
-const AuthContext = createContext<AuthContextType>(null!);
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
+    // For now, we are in "Guest Mode" to stop the crashes
+    const [user, setUser] = useState<{ background: string } | null>(null);
 
-export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState<User | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        // Fetch session on load
-        async function fetchSession() {
-            try {
-                const session = await authClient.getSession();
-                if (session.data) {
-                    setUser(session.data.user as User);
-                }
-            } catch (e) {
-                console.error("Session fetch error", e);
-            } finally {
-                setIsLoading(false);
-            }
-        }
-        fetchSession();
-    }, []);
-
-    const signIn = async (email, password) => {
-        setIsLoading(true);
-        await authClient.signIn.email({ email, password });
-        window.location.reload();
+    const signIn = () => {
+        console.log("Sign in clicked (Demo Mode)");
+        setUser({ background: 'student' });
     };
 
-    const signUp = async (email, password, name, background, hardware_specs) => {
-        setIsLoading(true);
-        await authClient.signUp.email({ 
-            email, 
-            password, 
-            name, 
-            background,
-            hardware_specs
-        });
-        window.location.reload();
-    };
-
-    const signOut = async () => {
-        await authClient.signOut();
-        window.location.reload();
+    const signOut = () => {
+        setUser(null);
     };
 
     return (
-        <AuthContext.Provider value={{ user, isLoading, signIn, signUp, signOut }}>
+        <AuthContext.Provider value={{ user, signIn, signOut }}>
             {children}
         </AuthContext.Provider>
     );

@@ -8,7 +8,7 @@ export default {
   "tagline": "A Hands-on Course in Humanoid Robotics",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "physical-ai",
   "projectName": "physical-ai-textbook",

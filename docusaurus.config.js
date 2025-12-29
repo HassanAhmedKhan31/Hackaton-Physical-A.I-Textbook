@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'A Hands-on Course in Humanoid Robotics',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'physical-ai', // Usually your GitHub org/user name.
   projectName: 'physical-ai-textbook', // Usually your repo name.

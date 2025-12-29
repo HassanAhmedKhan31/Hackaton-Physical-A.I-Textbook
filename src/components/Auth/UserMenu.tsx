@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { authClient } from './AuthClient';
+import { authClient } from './authClient';
 
 export default function UserMenu() {
   const [isModalOpen, setIsModalOpen] = useState(false);
